@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { useState } from "react";
 import searchImages from "./api";
 import ImageList from "./components/ImageList";
@@ -12,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
       <SearchBar onSubmit={handleSubmit} />
       <ImageList images={images} />
     </div>
