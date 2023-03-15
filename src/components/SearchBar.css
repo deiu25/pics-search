@@ -7,6 +7,7 @@
   background: linear-gradient(135deg, #5f27cd, #a55eea);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  margin-top: 20px;
 }
 
 .search-bar form {
