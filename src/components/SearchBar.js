@@ -11,13 +11,18 @@ const SearchBar = ({ onSubmit }) => {
 
   const handleChange = (event) => {
     setTerm(event.target.value);
+    onSubmit(event.target.value);
   };
 
   return (
     <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
         <label>Search For Images</label>
-        <input value={term} onChange={handleChange} />
+        <input
+          placeholder="Search for imgs"
+          value={term}
+          onChange={handleChange}
+        />
       </form>
     </div>
   );
